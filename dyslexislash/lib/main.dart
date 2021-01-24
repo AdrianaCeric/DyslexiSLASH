@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:dyslexislash/login/login.dart';
 import 'package:dyslexislash/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 4), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
     });
   }
 
