@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:dyslexislash/login/login.dart';
-import 'package:dyslexislash/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';

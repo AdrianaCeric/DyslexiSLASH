@@ -1,6 +1,9 @@
+import 'dart:async';
 import 'dart:math';
 
+import 'package:dyslexislash/screens/score.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'models/tile.dart';
 import 'models/tile_part.dart';
@@ -35,7 +38,9 @@ class _CanvasAreaState<CanvasArea> extends State {
     _spawnRandomTile();
 
     _tick();
-
+    Timer(Duration(seconds: 10), () {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Score()));
+    });
     super.initState();
   }
 
@@ -87,7 +92,13 @@ class _CanvasAreaState<CanvasArea> extends State {
         top: 16,
         child: Text(
           'Score: $score',
-          style: TextStyle(fontSize: 24),
+          style: GoogleFonts.poppins(
+            textStyle: TextStyle(
+              color: Color(0xff5CA6A6),
+              fontSize: 30,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
         )));
 
     return widgetsOnStack;
