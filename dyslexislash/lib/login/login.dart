@@ -2,6 +2,7 @@ import 'package:dyslexislash/initial_screen.dart';
 import 'package:dyslexislash/screens/homepage.dart';
 import 'package:aad_oauth/aad_oauth.dart';
 import 'package:aad_oauth/model/config.dart';
+import 'package:dyslexislash/screens/level.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -61,30 +62,6 @@ class _LoginState extends State<Login> {
                             login();
                           }),
                     ),
-                    // Container(
-                    //   height: 45,
-                    //   width: MediaQuery.of(context).size.width,
-                    //   child: RaisedButton(
-                    //     child: Text(
-                    //       'LOG IN',
-                    //       style:
-                    //           TextStyle(color: Color(0xff6202ee), fontSize: 15),
-                    //     ),
-                    //     color: Colors.white,
-                    //     shape: RoundedRectangleBorder(
-                    //         borderRadius: BorderRadius.circular(28),
-                    //         side: BorderSide(color: Color(0xff6202ee))),
-                    //     onPressed: () {
-                    //       // LOGIN write code here
-                    //       //  Navigator.push(
-                    //       //     context,
-                    //       //     MaterialPageRoute(
-                    //       //       builder: (context) => LogIn(),
-                    //       //     ),
-                    //       //   );
-                    //     },
-                    //   ),
-                    // ),
                   ],
                 ),
               ),
@@ -104,8 +81,8 @@ class _LoginState extends State<Login> {
       FlatButton(
           child: const Text('Ok'),
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => InitialScreen()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Levels()));
           })
     ]);
     showDialog(context: context, builder: (BuildContext context) => alert);

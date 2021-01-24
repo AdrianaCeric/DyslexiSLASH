@@ -3,13 +3,13 @@ import 'dart:ui';
 abstract class GravitationalObject {
   GravitationalObject(
       {this.position,
-      this.gravitySpeed = 0.0,
+      this.gravitySpeed = 10.0,
       this.additionalForce = const Offset(0, 0),
       this.rotation});
 
   Offset position;
   double gravitySpeed;
-  double _gravity = 1.0;
+  double _gravity = 4.0;
   Offset additionalForce;
   double rotation;
 
