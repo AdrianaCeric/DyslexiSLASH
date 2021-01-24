@@ -3,7 +3,7 @@ This [study](https://www.cell.com/current-biology/fulltext/S0960-9822(13)00079-1
 
 We also found from this [site](https://www.everydayhealth.com/dyslexia/types/) that children with dyslexia may read below the expected level for their age and have difficulty forming sentences and finding the right words, lowering their self-confidence. **They have a much higher chance of suffering from mental health conditions such as anxiety and depression later in life if their visual/oral/auditory skills are not strengthened.** 
 
-We were intrigued, and so we researched a bit more into what dyslexia entailed, and we quickly identified many different kinds. We focused to help dyslexic individuals who have trouble forming words and phrases (phonological/visual dyslexia) and applied these findings in our application.  
+Intrigued, we researched a bit more into what dyslexia entailed, and we quickly identified that the disorder was largely individualized and that there were different kinds. We focused on helping dyslexic individuals who have trouble forming words and phrases (phonological/visual dyslexia) by applying the findings from our research into our application.
 
 ## 🤳 What it does
 Our app, DyslexiSLASH works much like the classic Fruit Ninja mobile app. Once the user hits play, letters in all orientations are randomly dropped at the top of the screen. The user, using their finger or stylus, will try to slash the dropped letters with the correct orientation in order to earn as many points as possible within a given time frame. The user will attempt to achieve personal records and share their scores with friends and family. 
