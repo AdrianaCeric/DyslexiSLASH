@@ -1,9 +1,9 @@
 import 'dart:ui';
 
-abstract class GravitationalObject {
-  GravitationalObject(
+abstract class GravitationalObjectFast {
+  GravitationalObjectFast(
       {this.position,
-      this.gravitySpeed = 10.0,
+      this.gravitySpeed = 5.0,
       this.additionalForce = const Offset(0, 0),
       this.rotation});
 

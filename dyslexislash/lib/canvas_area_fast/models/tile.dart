@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'gravitational_object.dart';
 
-class Tile extends GravitationalObject {
+class Tile extends GravitationalObjectFast {
   Tile(
       {position,
       this.width,

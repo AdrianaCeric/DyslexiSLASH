@@ -19,11 +19,23 @@ class _CanvasAreaFastState<CanvasAreaFast> extends State {
   TouchSlice touchSlice;
   List<Tile> tiles = List();
   List<TilePart> tileParts = List();
-
+  var imagePath = [
+    "assets/J.png",
+    "assets/M.png",
+    "assets/R.png",
+    "assets/S.png",
+    "assets/S1.png",
+    "assets/Z.png",
+    "assets/Z1.png",
+  ];
+  var _random = Random();
+  var imageToShow;
   @override
   void initState() {
     _spawnRandomTile();
+
     _tick();
+
     super.initState();
   }
 
@@ -136,7 +148,8 @@ class _CanvasAreaFastState<CanvasAreaFast> extends State {
   }
 
   Widget _getMelon(Tile tile) {
-    return Image.asset('assets/uncut.png', height: 80, fit: BoxFit.fitHeight);
+    return Image.asset(imageToShow.toString(),
+        height: 80, fit: BoxFit.fitHeight);
   }
 
   Widget _getGestureDetector() {
@@ -147,11 +160,13 @@ class _CanvasAreaFastState<CanvasAreaFast> extends State {
     }, onScaleUpdate: (details) {
       setState(() {
         _addPointToSlice(details);
+
         _checkCollision();
       });
     }, onScaleEnd: (details) {
       setState(() {
         _resetSlice();
+        imageToShow = imagePath[_random.nextInt(imagePath.length)];
       });
     });
   }
@@ -180,6 +195,7 @@ class _CanvasAreaFastState<CanvasAreaFast> extends State {
           tiles.remove(tile);
           _turnTileIntoParts(tile);
           score += 10;
+
           break;
         }
       }
