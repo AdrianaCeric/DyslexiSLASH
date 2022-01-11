@@ -1,3 +1,6 @@
+# DyslexiSLASH App
+![image](https://user-images.githubusercontent.com/62163307/149020098-3ef42d80-fe37-42b1-a2cc-43ea5dea35f4.png)
+
 ## 💡 Inspiration
 This [study](https://www.cell.com/current-biology/fulltext/S0960-9822(13)00079-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982213000791%3Fshowall%3Dtrue) by an Italian team from the University of Padua suggests that "playing video games may help children with dyslexia improve their reading skills." They also stated that **"Dyslexic children learned to orient and focus their attention more efficiently to extract the relevant information of a written word more rapidly."**
 
